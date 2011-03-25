@@ -1,0 +1,7 @@
+<Context>
+	<Parameter name="dbimpl" value="flightLog.db.dummy.FlightLogDummyDBImpl" />
+	<!--  
+	<Parameter name="dbimpl" value="flightLog.db.db4o4.FlightLogDb4o4Impl" />
+	<Parameter name="dbfilename" value="D:/java/flugbuch/FlightLogWebTestAH/flightlogdb4o4.yap" />
+	-->
+</Context>
