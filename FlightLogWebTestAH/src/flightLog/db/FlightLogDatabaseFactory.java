@@ -4,8 +4,8 @@ import flightLog.Config;
 
 public class FlightLogDatabaseFactory {
 
-	private FlightLogDatabaseIF dbimpl; 
-	
+	private FlightLogDatabaseIF dbimpl;
+
 	private static class Holder {
 		private static final FlightLogDatabaseFactory INSTANCE = new FlightLogDatabaseFactory();
 	}
@@ -19,13 +19,14 @@ public class FlightLogDatabaseFactory {
 			throw new RuntimeException(e);
 		}
 	}
-	
+
 	private FlightLogDatabaseIF getDbImpl() {
 		return dbimpl;
 	}
-	
+
 	public static FlightLogDatabaseIF getFlightLogDatabaseImpl() {
 		FlightLogDatabaseFactory f = Holder.INSTANCE;
 		return f.getDbImpl();
 	}
+	// Kommentar
 }
